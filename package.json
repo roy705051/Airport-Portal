@@ -1,8 +1,8 @@
 {
-  "name": "airport_portal",
+  "name": "new_airport",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "schedule2.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "server": "json-server --watch data.json --port 8080"
@@ -11,6 +11,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "dotenv": "^16.3.1",
     "json-server": "^0.17.3"
   }
 }
