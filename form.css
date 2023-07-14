@@ -1,0 +1,203 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+body {
+  background-image: url("./image/background_signup_img.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+.container {
+  margin: 10px;
+  height: auto;
+  padding: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.498);
+  border-radius: 20px;
+  border: 2px solid rgba(255, 255, 255, 0.582);
+}
+.container header {
+  margin-top: 10px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.856), 0 0 25px rgba(0, 0, 255, 0.87),
+    0 0 5px rgba(0, 0, 139, 0.651);
+  font-size: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #151414;
+  font-weight: 500;
+  text-align: center;
+}
+.container .form {
+  margin-top: 30px;
+}
+.form .input-box {
+  width: 100%;
+  margin-top: 20px;
+}
+.input-box label {
+  color: #333;
+}
+.form :where(.input-box input, .select-box) {
+  height: 50px;
+  width: 100%;
+  outline: none;
+  font-size: 1rem;
+  color: black;
+
+  border: 1px solid #393333d6;
+  border-radius: 6px;
+  padding: 0 15px;
+}
+/* .form :where(.input-box1){
+  display: flex;
+  position: relative;
+  column-gap: 15px;
+  height: 50px;
+  width: 100%;
+  font-size: 1rem;
+  color: #707070;
+  margin-top: 20px;
+  /* border: 1px solid #ddd; 
+  border-radius: 6px;
+  padding: 0 15px;
+} */
+.input-box input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.form .column {
+  display: flex;
+  column-gap: 15px;
+}
+.form .gender-box {
+  margin-top: 20px;
+}
+.gender-box label {
+  color: #333;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-bottom: 8px;
+}
+.form :where(.gender-opt, .gender) {
+  display: flex;
+  align-items: center;
+  column-gap: 50px;
+  flex-wrap: wrap;
+}
+.form .gender {
+  column-gap: 5px;
+}
+.gender input {
+  accent-color: rgb(29, 29, 29);
+  /* accent-color: rgb(129,125,125); */
+}
+.form :where(.gender input, .gender label) {
+  cursor: pointer;
+}
+.gender label {
+  color: rgb(64, 59, 59);
+  font-size: 1rem;
+}
+.address :where(input, .select-box) {
+  margin-top: 15px;
+}
+.select-box select {
+  height: 100%;
+  width: 100%;
+  outline: none;
+  border: none;
+  color: black;
+  font-size: 1rem;
+}
+.button {
+  height: 55px;
+  display: flex;
+  justify-content: space-between;
+  background: transparent;
+  /* width: 100%; */
+  color: #fff;
+  font-size: 2px;
+  font-weight: 400;
+  border: none;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  align-items: center;
+}
+.form button:hover {
+  /* background: rgb(19, 186, 175); */
+  background: linear-gradient(50deg, yellow, rgb(0, 98, 255));
+}
+@media screen and (max-width: 500px) {
+  .form .column {
+    flex-wrap: wrap;
+  }
+  .form :where(.gender-opt, .gender) {
+    row-gap: 15px;
+  }
+}
+input:hover {
+  border: 2px solid rgba(0, 0, 255, 0.537);
+}
+label {
+  font-size: large;
+  font-weight: 500;
+  color: #000000;
+  margin-left: 5px;
+}
+.btn {
+  /* background-color: rgba(164, 214, 25, 0.884); */
+  background-color: rgba(167, 252, 49, 0.997);
+  font-size: large;
+  font-weight: 700;
+  font-family: "Times New Roman", Times, serif;
+  width: 100px;
+  height: 40px;
+  margin-left: 19px;
+  border-radius: 10px;
+  color: black;
+}
+.btn:hover {
+  background-image: linear-gradient(50deg, yellow, rgb(0, 98, 255));
+}
+::placeholder {
+  color: rgba(1, 19, 53, 0.817);
+}
+.butt {
+  margin-right: 15px;
+}
+.logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+#cross {
+  font-size: 33px;
+  border-radius: 30% 30%;
+  background-color: #fff;
+  height: fit-content;
+}
+form {
+  animation: animatetop 0.8 1s forwards;
+}
+body {
+  animation: animatetop 0.8 1s forwards;
+}
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+a {
+  color: blue;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
