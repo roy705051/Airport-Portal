@@ -29,17 +29,21 @@ submitButton.addEventListener("click", async () => {
     const data = result.data;
     //const grandparent = document.createElement("div");
     //grandparent.className = "grandparent";
-    for (let i = 0; i < Math.min(100, data.length); i++) {
+    for (let i = 0; i < Math.min(50, data.length); i++)
+    {
       const flightNumber = data[i].flightNumber;
       const departureAirportIATA = data[i].departure.airport.iata;
-      const departureTimeLocal = data[i].departure.time.local;
+      const departureTimeLocal = data[i].departure.time.utc;
       const arrivalAirportIATA = data[i].arrival.airport.iata;
       const arrivalTimeLocal = data[i].arrival.time.utc;
+      //const arrivalDate =data[i].arrival.date.utc;
 
       const airline = data[i].codeshare?.aircraftOwner?.code;
       let airlineName = "";
       let flight_image;
-      if (["6E", "AI", "UK", "SG", "G8", "I5"].includes(airline)) {
+      
+      if (["6E", "AI", "UK", "SG", "G8", "I5"].includes(airline)) 
+      {
         if (airline === "6E") {
           airlineName = "Indigo";
           flight_image = document.createElement("img");
@@ -103,6 +107,9 @@ submitButton.addEventListener("click", async () => {
 
         const arrivalTimeElement = document.createElement("p");
         arrivalTimeElement.innerText = `Arrival Time: ${arrivalTimeLocal}`;
+
+        // const arrivalDateElement = document.createElement("p");
+        // arrivalDateElement.innerText=`Arrival date: ${arrivalDate}`;
 
         flightCard.append(flight_image);
         flightCard.append(airlineName);
