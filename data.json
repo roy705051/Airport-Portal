@@ -1,0 +1,18 @@
+{
+  "userdata": [
+    {
+      "fname": "RAHUL",
+      "lname": "KUMAR",
+      "email": "roy705051@gmail.com",
+      "mob": "123456",
+      "gender": "male",
+      "dob": "2022-05-05",
+      "country": "India",
+      "state": "bihar",
+      "city": "jamui",
+      "pin": "811307",
+      "password": "123456",
+      "id": 1
+    }
+  ]
+}
