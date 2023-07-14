@@ -24,6 +24,7 @@
       font-family: 'Times New Roman', Times, serif;
       
 }
+
 .nav a:hover{
       color: rgb(255, 230, 2);
       text-decoration: underline;
@@ -168,3 +169,11 @@ input[type="date"]
 .fa:hover {  
     opacity: 0.9;  
 }  
+.pic-but{
+  animation: hill 4s infinite alternate-reverse;
+}
+@keyframes hill{
+  from{transform: scale(1);}
+  to {transform: scale(1.03);}
+  
+}

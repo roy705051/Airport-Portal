@@ -39,7 +39,7 @@ var x = 0;
             localStorage.setItem("token", JSON.stringify(Date.now()));
             localStorage.setItem("fname", JSON.stringify(comp.fname));
             localStorage.setItem("lname", JSON.stringify(comp.lname));
-            window.location.href = "index.html";
+            window.location.href = "home.html";
           } else {
             alert("Wrong Password or Email or \n You are not registered in!!");
           }
