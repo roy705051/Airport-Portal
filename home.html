@@ -24,7 +24,7 @@
                 <a href="#">Contact</a>
             </div>
             <div class="but">
-                <button type="button" class="btn btn-light">SIGN OUT</button>
+                <button type="button" class="btn btn-light" onclick="window.location.href='index.html'";>SIGN OUT</button>
             </div>
         </nav>
         <div class="pic-but" id="pic-but">
@@ -35,28 +35,10 @@
         <div class="par" id="par">
             <div class="par-child" id="par-child">
                 <div class="child" id="child">
-                    <select id="from">
-                        <option value="" id="fromchange">DEPARTURE AIRPORT</option>
-                        <option value="male">PATNA</option>
-                        <option value="female">DELHI</option>
-                        <option value="others">RANCHI</option>
-                        <option value="others">MUMBAI</option>
-                        <option value="others">BANGALORE</option>
-                    </select>
-                    <div id="dep">
-                    <input type="date" id="depdate" min="2023-07-13"/>
-                    </div>
-                    <select id="to">
-                        <option value="" id="tochange">ARRIVAL AIRPORT</option>
-                        <option value="male">PATNA</option>
-                        <option value="female">DELHI</option>
-                        <option value="others">RANCHI</option>
-                        <option value="others">MUMBAI</option>
-                        <option value="others">BANGALORE</option>
-                    </select>
-                    <div id="arr">
-                    <input type="date" id="arrdate" min="2023-07-13"/>
-                    </div>
+                    <input type="text" placeholder="Departure Airport (eg. CCU,BBI)" id="dairport" />
+                    <input type="text" placeholder="Departure Date (yyyy-mm-dd)" id="ddate" />
+                    <input type="text"  placeholder="Arrival Airport (eg.DEL,BOM) " id="aairport" />
+                    <input type="text" placeholder="Arrival Date (yyyy-mm-dd)" id="adate" />
                 </div>
                 <button id="submit" class="btn_search">SEARCH</button>
             </div>
