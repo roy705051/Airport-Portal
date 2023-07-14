@@ -1,3 +1,76 @@
+/* schedule search css --> css for page by Shubham */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 2%;
+  gap: 10px;
+  background-color: #e7e7e2;
+  border-radius: 10px;
+}
+
+.flight-card {
+  display: flex;
+  align-items: center;
+  padding: 2%;
+  border: 1px solid black;
+  border-radius: 20px;
+  width: 60%;
+}
+.flight-card p {
+  display: block;
+  padding: 2%;
+  margin: 2% 2% 2% 2%;
+  text-align: center;
+}
+
+.airImg {
+  background-color: #ffffff;
+  width: 8%;
+  border: 10px;
+  margin-right: 20px;
+  border-radius: 10px;
+}
+
+@media screen and (max-width: 1024px) {
+  .flex-container {
+    padding: 2% 1%;
+    gap: 5px;
+  }
+
+  .flight-card {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .airImg {
+    width: 10%;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .flex-container {
+    padding: 2% 0;
+    gap: 5px;
+  }
+
+  .flight-card {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .airImg {
+    margin-bottom: 5px;
+    width: 20%;
+  }
+}
+
+
+
+
+
+
+/* aniket homepage css */
 *{
     margin: 0;
     padding:0;
@@ -42,6 +115,13 @@
 .btn:hover{
 background-image: linear-gradient(50deg, yellow, rgb(0, 98, 255));
 }
+
+.btn_search:hover{
+  transition: 0.3s;
+  color: aliceblue;
+  opacity: 1;
+  background-color: #838485;
+}
 #img1{
   border-radius: 10px;
   height: 620px;
@@ -55,11 +135,12 @@ background-image: linear-gradient(50deg, yellow, rgb(0, 98, 255));
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: rgb(164, 110, 110);
-  color: black;
+  color: white;
   font-size: 16px;
   padding: 16px 30px;
   border: none;
   cursor: pointer;
+  margin-right: 10px;
   border-radius: 15px;
   text-align: center;
 }
@@ -69,6 +150,7 @@ background-image: linear-gradient(50deg, yellow, rgb(0, 98, 255));
 }
 .pic-but .mybtn2 {
   position: absolute;
+  margin-left: 10px;
   top:563px;
   height:9%;
   width: 15%;
@@ -76,7 +158,7 @@ background-image: linear-gradient(50deg, yellow, rgb(0, 98, 255));
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
   background-color: rgb(187, 184, 184);
-  color: black;
+  color: white;
   font-size: 16px;
   padding: 16px 30px;
   border: none;
@@ -93,7 +175,9 @@ background-image: linear-gradient(50deg, yellow, rgb(0, 98, 255));
 }
 .par-child{
   text-align: center;
-  background-color: rgb(224, 224, 224);
+  padding-top: 2%;
+  padding-bottom: 2%;
+  background-color: #e7e7e2;
 }
 #child{
   display: flex;
@@ -101,11 +185,12 @@ background-image: linear-gradient(50deg, yellow, rgb(0, 98, 255));
   margin:0% 10% 2% 10%;
   border-radius: 10px;
 }
-#from,#to,#search{
+#aairport,#dairport,#submit,#ddate,#adate{
   height:40px;
-  width: 200px;
-  border-radius: 20px;
+  width: 270px;
+  border-radius: 15px;
   border: 1px solid;
+  padding-left: 0.5%;
 }
 input[type="date"]
 {
@@ -114,8 +199,10 @@ input[type="date"]
   border-radius: 20px;
   border: 1px solid;
 }
-#readwrite{
-  top:auto;
+.readwrite {
+  /* top:auto; */
+  padding: 0%;
+  margin: 0%;
   text-align: center;
   background-color: rgb(224, 224, 224);
 }
