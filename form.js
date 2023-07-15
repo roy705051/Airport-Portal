@@ -44,6 +44,7 @@ sub.addEventListener("submit", function (event) {
     .then((res) => res.json())
     .then((data) => {
       alert("Account created successfully!");
-      window.location.replace("signin.html");
+      
     });
+    window.location.replace("signin.html");
 });

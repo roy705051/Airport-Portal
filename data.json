@@ -1,32 +1,18 @@
 {
   "userdata": [
     {
-      "fname": "Shubham",
-      "lname": "Raj",
-      "email": "sbmraj123@gmail.com",
-      "mob": "8347957567",
+      "fname": "RAHUL",
+      "lname": "KUMAR",
+      "email": "roy705051@gmail.com",
+      "mob": "906073384",
       "gender": "male",
-      "dob": "2003-08-20",
+      "dob": "2002-02-24",
       "country": "India",
       "state": "Bihar",
-      "city": "Rajauli",
-      "pin": "805125",
+      "city": "jamui",
+      "pin": "811307",
       "password": "123456",
       "id": 1
-    },
-    {
-      "fname": "Shanu",
-      "lname": "Barnwal",
-      "email": "shanubarnwal123@gmail.com",
-      "mob": "8540980035",
-      "gender": "male",
-      "dob": "2003-02-12",
-      "country": "India",
-      "state": "Jharkhand",
-      "city": "Koderma",
-      "pin": "781366",
-      "password": "123456",
-      "id": 2
     }
   ]
 }

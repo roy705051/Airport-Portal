@@ -4,7 +4,26 @@ const dairInput = document.getElementById("dairport");
 const aairInput = document.getElementById("aairport");
 const submitButton = document.getElementById("submit");
 const containerElement = document.getElementById("container");
-
+const namee=document.getElementById("name");
+const par=document.getElementById("par");
+function search1(){
+  par.style.display="block";
+ 
+}
+function getnamee(){
+    let j=localStorage.getItem("fname")
+    if(j===null)
+    {
+      window.location.replace("index.html");
+    }
+  namee.innerHTML="&nbsp;"+`${"  "+localStorage.getItem("fname")}`;
+}
+  signout.addEventListener("click", () => {
+    localStorage.removeItem("fname");
+    localStorage.removeItem("lname");
+    window.location.href = "index.html";
+  });
+  
 submitButton.addEventListener("click", async () => {
   // Retrieved the input values
   const departureDateTime = ddateInput.value;

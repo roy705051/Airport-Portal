@@ -11,34 +11,48 @@
     <link rel="stylesheet" href="./home.css">
     <link rel="icon" type="image/png" href="image/titleimg.jpg">
 </head>
-<body>
+<body onload="getnamee()">
     <div class="grand">   
         <nav class="navigation">
-            <div class="logo">
-                <img src="./image/logo.png">
+            <div class="logo">   
+               <div><img src="./image/logo.png"></div> 
+                <div><b>Hello!!<span id="name"> </span></b></div>
             </div>
+           
             <div class="nav">
-                <a href="#">Home</a>
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Contact</a>
+                <a href="home.html">Home</a>
+                <a href="About.html">About</a>
+                <a href="Services.html">Services</a>
+                <a href="Contact.html">Contact</a>
             </div>
             <div class="but">
-                <button type="button" class="btn btn-light" onclick="window.location.href='index.html'";>SIGN OUT</button>
+                <button type="button" class="btn btn-light" id="signout";>SIGN OUT</button>
             </div>
         </nav>
         <div class="pic-but" id="pic-but">
             <img src="./image/airplane.jpg" alt="error" id="img1">
-            <button type="button" class="mybtn1" onclick="window.location.href='book.html'";>BOOK NOW</button>
-            <button type="button" class="mybtn2" onclick="window.location.href='read.html'";>READ MORE</button>
+            <button type="button" class="mybtn1" onclick="search1()">CLICK ME : )</button>
+            <button type="button" class="mybtn2" onclick="window.location.href='About.html'";>READ MORE</button>
         </div>
-        <div class="par" id="par">
+        <div class="par" id="par" style="display: none;">
             <div class="par-child" id="par-child">
                 <div class="child" id="child">
+                    <div>
+                    <label>Departure Airport</label>
                     <input type="text" placeholder="Departure Airport (eg. CCU,BBI)" id="dairport" />
+                    </div>
+                    <div>
+                    <label>Departure date(yyyy-mm-dd)</label>
                     <input type="text" placeholder="Departure Date (yyyy-mm-dd)" id="ddate" />
+                     </div>
+                     <div>
+                    <label>Arrival Airport</label>
                     <input type="text"  placeholder="Arrival Airport (eg.DEL,BOM) " id="aairport" />
+                    </div>
+                    <div>
+                    <label>Arrival Date(yyyy-mm-dd)</label>
                     <input type="text" placeholder="Arrival Date (yyyy-mm-dd)" id="adate" />
+                    </div>
                 </div>
                 <button id="submit" class="btn_search">SEARCH</button>
             </div>

@@ -264,3 +264,18 @@ input[type="date"]
   to {transform: scale(1.03);}
   
 }
+.child div{
+ padding: 25px;
+}
+.logo{
+  display: flex;
+  justify-content: space-around;
+  gap:28px;
+  font-size:25px;
+  color: whitesmoke;
+}
+#name{
+text-shadow: 5px 5px 5px#3B5998;
+text-decoration: none;
+color-scheme:2px 5px 8px red ;
+}
