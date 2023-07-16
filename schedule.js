@@ -36,7 +36,7 @@ submitButton.addEventListener("click", async () => {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "8a1c4acc0fmsh714da2ec4bcc7cfp15d1c6jsn6f06be0020e7",
+        "X-RapidAPI-Key": "77e5c0b04fmshbdd4affc6f7c740p1fd876jsnc321e7d9ddd1",
         "X-RapidAPI-Host": "flight-info-api.p.rapidapi.com",
       },
     };
