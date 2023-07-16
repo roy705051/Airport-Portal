@@ -4,31 +4,69 @@ const dairInput = document.getElementById("dairport");
 const aairInput = document.getElementById("aairport");
 const submitButton = document.getElementById("submit");
 const containerElement = document.getElementById("container");
-const namee = document.getElementById("name");
-const par = document.getElementById("par");
-function search1() {
-  par.style.display = "block";
-}
-function getnamee() {
-  let j = localStorage.getItem("fname");
-  if (j === null) {
-    window.location.replace("index.html");
-  }
-  namee.innerHTML = "&nbsp;" + `${"  " + localStorage.getItem("fname")}`;
-}
-signout.addEventListener("click", () => {
-  localStorage.removeItem("fname");
-  localStorage.removeItem("lname");
-  window.location.href = "index.html";
-});
+const namee=document.getElementById("name");
+const par=document.getElementById("par");
 
+function convertAirportCode(input) {
+  if (input.toLowerCase() === "kolkata") {
+    return "CCU";
+  } else if (input.toLowerCase() === "mumbai") {
+    return "BOM";
+  } else if (input.toLowerCase() === "delhi") {
+    return "DEL";
+  }else if (input.toLowerCase() === "chennai") {
+    return "MAA";
+  }
+  else if (input.toLowerCase() === "chennai") {
+    return "MAA";
+  }
+  else if (input.toLowerCase() === "ahmedabad") {
+    return "AMD";
+  }
+  else if (input.toLowerCase() === "ranchi") {
+    return "IXR";
+  }
+  else if (input.toLowerCase() === "andaman") {
+    return "CBD";
+  }
+  else if (input.toLowerCase() === "patna") {
+    return "PAT";
+  }
+ 
+  return input;
+}
+
+
+
+
+function search1(){
+  par.style.display="block";
+ 
+}
+function getnamee(){
+    let j=localStorage.getItem("fname")
+    if(j===null)
+    {
+      window.location.replace("index.html");
+    }
+  namee.innerHTML="&nbsp;"+`${"  "+localStorage.getItem("fname")}`;
+}
+  signout.addEventListener("click", () => {
+    localStorage.removeItem("fname");
+    localStorage.removeItem("lname");
+    window.location.href = "index.html";
+  });
+  
 submitButton.addEventListener("click", async () => {
   // Retrieved the input values
   const departureDateTime = ddateInput.value;
   const arrivalDateTime = adateInput.value;
-  const arrivalAirport = aairInput.value;
-  const deptAirport = dairInput.value;
+  const arrivalAirport = convertAirportCode(aairInput.value);
+  const deptAirport = convertAirportCode(dairInput.value);
   // Fetching flight information based on the input values
+  if (!arrivalDateTime) {
+    arrivalDateTime = departureDateTime;
+  }
   try {
     const url = `https://flight-info-api.p.rapidapi.com/status?version=v2&DepartureDateTime=${departureDateTime}&ArrivalDateTime=${arrivalDateTime}&DepartureAirport=${deptAirport}&ArrivalAirport=${arrivalAirport}&CodeType=IATA&ServiceType=Passenger`;
     const options = {
