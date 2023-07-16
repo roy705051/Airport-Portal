@@ -13,6 +13,20 @@
       "pin": "811307",
       "password": "123456",
       "id": 1
+    },
+    {
+      "fname": "shubham",
+      "lname": "singh",
+      "email": "kshubham329@gmail.com",
+      "mob": "7004410059",
+      "gender": "male",
+      "dob": "2003-07-26",
+      "country": "India",
+      "state": "Jharkhand",
+      "city": "bokaro",
+      "pin": "827004",
+      "password": "123abc",
+      "id": 2
     }
   ]
 }

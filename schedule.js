@@ -4,26 +4,24 @@ const dairInput = document.getElementById("dairport");
 const aairInput = document.getElementById("aairport");
 const submitButton = document.getElementById("submit");
 const containerElement = document.getElementById("container");
-const namee=document.getElementById("name");
-const par=document.getElementById("par");
-function search1(){
-  par.style.display="block";
- 
+const namee = document.getElementById("name");
+const par = document.getElementById("par");
+function search1() {
+  par.style.display = "block";
 }
-function getnamee(){
-    let j=localStorage.getItem("fname")
-    if(j===null)
-    {
-      window.location.replace("index.html");
-    }
-  namee.innerHTML="&nbsp;"+`${"  "+localStorage.getItem("fname")}`;
+function getnamee() {
+  let j = localStorage.getItem("fname");
+  if (j === null) {
+    window.location.replace("index.html");
+  }
+  namee.innerHTML = "&nbsp;" + `${"  " + localStorage.getItem("fname")}`;
 }
-  signout.addEventListener("click", () => {
-    localStorage.removeItem("fname");
-    localStorage.removeItem("lname");
-    window.location.href = "index.html";
-  });
-  
+signout.addEventListener("click", () => {
+  localStorage.removeItem("fname");
+  localStorage.removeItem("lname");
+  window.location.href = "index.html";
+});
+
 submitButton.addEventListener("click", async () => {
   // Retrieved the input values
   const departureDateTime = ddateInput.value;
@@ -36,7 +34,7 @@ submitButton.addEventListener("click", async () => {
     const options = {
       method: "GET",
       headers: {
-        "X-RapidAPI-Key": "77e5c0b04fmshbdd4affc6f7c740p1fd876jsnc321e7d9ddd1",
+        "X-RapidAPI-Key": "d5e8381534mshb8c3088cfaaeff5p1ec33ajsncd7c9937d4a8",
         "X-RapidAPI-Host": "flight-info-api.p.rapidapi.com",
       },
     };
@@ -46,10 +44,21 @@ submitButton.addEventListener("click", async () => {
     console.log(result);
 
     const data = result.data;
+    // if no flight scheduled then print message
+    if (data.length === 0) {
+      const noFlightsMessage = document.createElement("p");
+      noFlightsMessage.innerText = "No flights scheduled for the given inputs.";
+      const flightCard = document.createElement("div");
+      flightCard.className = "flight-card";
+      flightCard.append(noFlightsMessage);
+      containerElement.appendChild(noFlightsMessage);
+
+      return;
+    }
+
     //const grandparent = document.createElement("div");
     //grandparent.className = "grandparent";
-    for (let i = 0; i < Math.min(50, data.length); i++)
-    {
+    for (let i = 0; i < Math.min(50, data.length); i++) {
       const flightNumber = data[i].flightNumber;
       const departureAirportIATA = data[i].departure.airport.iata;
       const departureTimeLocal = data[i].departure.time.utc;
@@ -60,9 +69,8 @@ submitButton.addEventListener("click", async () => {
       const airline = data[i].codeshare?.aircraftOwner?.code;
       let airlineName = "";
       let flight_image;
-      
-      if (["6E", "AI", "UK", "SG", "G8", "I5"].includes(airline)) 
-      {
+
+      if (["6E", "AI", "UK", "SG", "G8", "I5"].includes(airline)) {
         if (airline === "6E") {
           airlineName = "Indigo";
           flight_image = document.createElement("img");
