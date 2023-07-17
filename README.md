@@ -2,13 +2,13 @@
 
 Airport-Portal using HTML , CSS AND JAVASCRIPT
 
-(This project will help our users to know about the flight schedules for their respective inputs and will help them explore the best options available according to their requirements.)
+---->This project will help our users to know about the flight schedules for their respective inputs and will help them explore the best options available according to their requirements.
 
 #index page
 
 First, there is an index Page of the Airport Portal where a person can sign up or sign in.
 
-#Screen shot of the first page :
+#Screenshot of the first page :
 
 ![Screenshot 2023-07-15 073849](https://github.com/roy705051/Airport-Portal/assets/118226807/25515240-3fc3-46f1-8395-6ad8f8d79ae9)
 
@@ -22,7 +22,7 @@ Sample code:
 
 We had made sign in page through which we will be taking data to json server and save the data for further reference.
 
-Screen Shot:
+Screenshot:
 
 ![Screenshot 2023-07-15 074912](https://github.com/roy705051/Airport-Portal/assets/118226807/48a7f970-b3d7-4b62-abdd-d5f9fa3d5989)
 
@@ -34,7 +34,7 @@ Sample code:
 
 We have login page in which person can sign in and use our website.
 
-Screen shot:
+Screenshot:
 ![Screenshot 2023-07-15 074925](https://github.com/roy705051/Airport-Portal/assets/118226807/0fece15d-05b8-4ebe-81f0-b5ce489a3c80)
 
 Sample code:
@@ -45,7 +45,7 @@ Sample code:
 
 In this page we will be collecting the necessary inputs from our users to show them the respective flight schedules according to their inputs.
 
-Screen Shot:
+Screenshot:
 
 ![Screenshot 2023-07-15 081539](https://github.com/roy705051/Airport-Portal/assets/118226807/bd955271-4f0e-49d7-acf2-de5afe4c79c9)
 
@@ -55,7 +55,7 @@ Screen Shot:
 
 This page helps our users to know more about our us and facility that we provide to our customers.
 
-ScreenShot:
+Screenshot:
 
 ![Screenshot 2023-07-15 081917](https://github.com/roy705051/Airport-Portal/assets/118226807/875c05e5-d6b4-442e-b3d8-d0f28bd30b9c)
 
@@ -63,7 +63,7 @@ ScreenShot:
 
 This page helps our users to know more about our us and facility that we provide to our customers.
 
-ScreenShot:
+Screenshot:
 ![Screenshot 2023-07-16 235201](https://github.com/roy705051/Airport-Portal/assets/118226807/653609c4-c4eb-4c02-b352-87ae0d8aae54)
 
 
@@ -71,7 +71,7 @@ ScreenShot:
 
 This page helps our users to effortlessly connected with us, we are available 24*7 for their service and would be happy to serve you.
 
-ScreenShort:
+Screenshort:
 
 ![Screenshot 2023-07-15 074936](https://github.com/roy705051/Airport-Portal/assets/118226807/bca7e37c-0edc-4de8-b19a-8ea466eb2611)
 
@@ -79,7 +79,7 @@ ScreenShort:
 
 At last we have our schedule page where the details of your flights will displayed.
 
-ScreenShort:
+Screenshot:
 
 Sample code :
 
