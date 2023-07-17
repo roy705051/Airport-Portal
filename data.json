@@ -27,6 +27,20 @@
       "pin": "827004",
       "password": "123abc",
       "id": 2
+    },
+    {
+      "fname": "Sharun",
+      "lname": "Sir",
+      "email": "sharun123@gmail.com",
+      "mob": "3216165",
+      "gender": "male",
+      "dob": "2022-07-01",
+      "country": "India",
+      "state": "xyw",
+      "city": "bbs",
+      "pin": "811307",
+      "password": "123456",
+      "id": 3
     }
   ]
 }

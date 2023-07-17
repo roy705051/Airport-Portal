@@ -32,12 +32,12 @@
         <div class="pic-but" id="pic-but">
             <img src="./image/airplane.jpg" alt="error" id="img1">
             <button type="button" class="mybtn1" onclick="search1()">Airport Schedule</button>
-            <button type="button" class="mybtn2" onclick="window.location.href='service.html'";>READ MORE</button>
+            <button type="button" class="mybtn2" onclick="window.location.href='Services.html'";>READ MORE</button>
         </div>
         <div class="par" id="par" style="display: none;">
             <div class="par-child" id="par-child">
                 <div class="child" id="child">
-                    <div>
+                    <!-- <div>
                     <label>Departure Airport</label>
                     <input type="text" placeholder="Departure Airport (eg. CCU,BBI)" id="dairport" />
                     </div>
@@ -52,7 +52,44 @@
                     <div>
                     <label>Arrival Date(yyyy-mm-dd)</label>
                     <input type="text" placeholder="Arrival Date (yyyy-mm-dd)" id="adate" />
-                    </div>
+                    </div> -->
+
+
+                    <div>
+                        <label>Departure Airport</label>
+                        <select id="dairport">
+                            <option value="">Select Arrival Airport or Write Code (IATA)</option>
+                            <option value="CCU">Kolkata (CCU)</option>
+                            <option value="DEL">Delhi (DEL)</option>
+                            <option value="BBI">Bhubaneshwar (BBI)</option>
+                            <option value="BOM">Mumbai (BOM)</option>
+                            <option value="BLR">Ranchi (IXR)</option>
+                            <option value="BLR">Patna (PTA)</option>
+                            <option value="BLR">Chennai (MAA)</option>
+                            <option value="BLR">Andaman (CBD)</option>
+                        </select>
+                      </div><div>
+                        <label>Departure date (yyyy-mm-dd)</label>
+                        <input type="date" id="ddate" min="2023-16-23" required />
+                      </div>
+                      <div>
+                        <label>Arrival Airport</label>
+                        <select id="aairport">
+                          <option value="">Select Arrival Airport or Write Code (IATA)</option>
+                          <option value="CCU">Kolkata (CCU)</option>
+                          <option value="DEL">Delhi (DEL)</option>
+                          <option value="BBI">Bhubaneshwar (BBI)</option>
+                          <option value="BOM">Mumbai (BOM)</option>
+                          <option value="BLR">Ranchi (IXR)</option>
+                          <option value="BLR">Patna (PTA)</option>
+                          <option value="BLR">Chennai (MAA)</option>
+                          <option value="BLR">Andaman (CBD)</option>
+                        </select>
+                      </div>
+                      <div>
+                        <label>Arrival Date (yyyy-mm-dd)</label>
+                        <input type="date" id="adate" min="2023-16-23" required />
+                      </div>
                 </div>
                 <button id="submit" class="btn_search">SEARCH</button>
             </div>
