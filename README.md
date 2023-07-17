@@ -1,9 +1,11 @@
 # Airport-Portal
 
 Airport-Portal using HTML , CSS AND JAVASCRIPT
+
 (This project will help our users to know about the flight schedules for their respective inputs and will help them explore the best options available according to their requirements.)
 
 #index page
+
 First, there is an index Page of the Airport Portal where a person can sign up or sign in.
 
 #Screen shot of the first page :
@@ -17,6 +19,7 @@ Sample code :
 ![Screenshot 2023-07-15 074818](https://github.com/roy705051/Airport-Portal/assets/118226807/0faeb43f-ae5b-4c0a-8c03-0885a6a8423e)
 
 #Sign up page
+
 We had made sign in page through which we will be taking data to json server and save the data for further reference.
 
 Screen Shot is :
@@ -28,6 +31,7 @@ Sample code :
 ![Screenshot 2023-07-15 082249](https://github.com/roy705051/Airport-Portal/assets/118226807/3606e5f6-85ab-47b9-bee8-c508409ac1b0)
 
 #Sign in page
+
 We have login page in which person can sign in and use our website.
 
 Screen shot :
