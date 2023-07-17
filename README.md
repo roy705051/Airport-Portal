@@ -1,11 +1,12 @@
 # Airport-Portal
 
-Airport-Portal using HTML , CSS AND JS
-which will help us to know about the timing of our flight and will give you the best option and price of the ticket booking.
-#index page
-First, there is an index Page of Airport Portal where a person can sign up or sign in in the Airport portal.
+Airport-Portal using HTML , CSS AND JAVASCRIPT
+(This project will help our users to know about the flight schedules for their respective inputs and will help them explore the best options available according to their requirements.)
 
-screen shot of first page is :
+#index page
+First, there is an index Page of the Airport Portal where a person can sign up or sign in.
+
+#Screen shot of the first page :
 
 ![Screenshot 2023-07-15 073849](https://github.com/roy705051/Airport-Portal/assets/118226807/25515240-3fc3-46f1-8395-6ad8f8d79ae9)
 
@@ -16,7 +17,7 @@ Sample code :
 ![Screenshot 2023-07-15 074818](https://github.com/roy705051/Airport-Portal/assets/118226807/0faeb43f-ae5b-4c0a-8c03-0885a6a8423e)
 
 #Sign up page
-we had made sign in page through which will take data to json server and save the data for further reference.
+We had made sign in page through which we will be taking data to json server and save the data for further reference.
 
 Screen Shot is :
 
@@ -27,7 +28,7 @@ Sample code :
 ![Screenshot 2023-07-15 082249](https://github.com/roy705051/Airport-Portal/assets/118226807/3606e5f6-85ab-47b9-bee8-c508409ac1b0)
 
 #Sign in page
-we have login page in which person can sign in and use our website.
+We have login page in which person can sign in and use our website.
 
 Screen shot :
 ![Screenshot 2023-07-15 074925](https://github.com/roy705051/Airport-Portal/assets/118226807/0fece15d-05b8-4ebe-81f0-b5ce489a3c80)
@@ -38,8 +39,7 @@ Sample code :
 
 #Home page
 
-This page helps us to search from where the person want to get flight and what time
-and where they want to go.
+In this page we will be collecting the necessary inputs from our users to show them the respective flight schedules according to their inputs.
 
 Screen Shot :
 
@@ -49,7 +49,7 @@ Screen Shot :
 
 #About page
 
-This page helps us to know more about our contact and facility that we provide our customers.
+This page helps our users to know more about our us and facility that we provide to our customers.
 
 ScreenShot :
 
@@ -57,7 +57,7 @@ ScreenShot :
 
 #Service page
 
-This page helps us to know more about our contact and facility that we provide our customers.
+This page helps our users to know more about our us and facility that we provide to our customers.
 
 ScreenShot :
 ![Screenshot 2023-07-16 235201](https://github.com/roy705051/Airport-Portal/assets/118226807/653609c4-c4eb-4c02-b352-87ae0d8aae54)
@@ -65,7 +65,7 @@ ScreenShot :
 
 #Contact page
 
-This page helps our customer to get connected with us all the time, we are 24 hours available for service on there.
+This page helps our users to effortlessly connected with us, we are available 24*7 for their service and would be happy to serve you.
 
 ScreenShort are :
 
@@ -73,7 +73,7 @@ ScreenShort are :
 
 #The main page
 
-we have last working page where the detail of your flight and its detail will display.
+At last we have our schedule page where the details of your flights will displayed.
 
 Short are :
 
@@ -85,7 +85,7 @@ Sample code :
 
 ![search](https://github.com/roy705051/Airport-Portal/assets/118226807/07881b1d-0e7c-4b6d-abe7-ed658283d22d)
 
-We have use Rapid Aip website to get OAG API, This api use to give details of the flight and it schedule 
+We have used RapidAPI website to get OAG flight info API, this api provides the detail of the flights and schedule of the airports. 
 
 #Thank You
-#by Team code breaker
+(by Team Code Breaker)
